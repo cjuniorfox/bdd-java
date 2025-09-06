@@ -1,7 +1,9 @@
 package net.juniorfox.application.domain.adapter;
 
+import jakarta.validation.constraints.NotEmpty;
+
 public record UserRequest(
-        String nome,
-        String email
+        @NotEmpty String nome,
+        @NotEmpty String email
 ) {
 }

@@ -1,5 +1,6 @@
 package net.juniorfox.adapter.controller;
 
+import jakarta.validation.Valid;
 import net.juniorfox.application.domain.adapter.UserRequest;
 import net.juniorfox.application.domain.adapter.UserResponse;
 import net.juniorfox.application.domain.mapper.UserMapper;
@@ -21,7 +22,7 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<UserResponse> createUser(@RequestBody UserRequest userRequest){
+    public ResponseEntity<UserResponse> createUser(@RequestBody @Valid UserRequest userRequest){
         var user = UserMapper.toUser(userRequest);
         var persistedUser = userService.create(user);
         return ResponseEntity

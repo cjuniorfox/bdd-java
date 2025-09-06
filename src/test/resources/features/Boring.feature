@@ -1,6 +1,6 @@
 # language: pt
 
-Funcionalidade: consulta de API
+Funcionalidade: Consulta da API Boring
   Cenário: Chamar a API da aplicação
     Quando consultar o endpoint "/home"
     Então o código de retorno será 200

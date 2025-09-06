@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+
 
 @Entity
 @Table(name = "users")
@@ -12,7 +14,10 @@ public class UserEntity {
     @GeneratedValue
     private Long id;
 
+    @NotBlank
     private String name;
+    
+    @NotBlank
     private String email;
 
     public UserEntity() {}
