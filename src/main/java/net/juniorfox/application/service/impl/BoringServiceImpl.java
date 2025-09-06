@@ -2,7 +2,7 @@ package net.juniorfox.application.service.impl;
 
 import net.juniorfox.adapter.client.BoredApi;
 import net.juniorfox.application.domain.adapter.BoredApiResponse;
-import net.juniorfox.application.domain.entity.Bored;
+import net.juniorfox.application.domain.Bored;
 import net.juniorfox.application.domain.mapper.BoredMapper;
 import net.juniorfox.application.service.BoringService;
 import org.springframework.stereotype.Service;

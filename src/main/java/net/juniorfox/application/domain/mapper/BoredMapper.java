@@ -2,7 +2,7 @@ package net.juniorfox.application.domain.mapper;
 
 import net.juniorfox.application.domain.adapter.BoredApiResponse;
 import net.juniorfox.application.domain.adapter.BoredResponse;
-import net.juniorfox.application.domain.entity.Bored;
+import net.juniorfox.application.domain.Bored;
 
 public class BoredMapper {
 

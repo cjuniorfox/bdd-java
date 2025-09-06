@@ -1,6 +1,6 @@
 package net.juniorfox.application.service;
 
-import net.juniorfox.application.domain.entity.Bored;
+import net.juniorfox.application.domain.Bored;
 
 public interface BoringService {
     public Bored process();

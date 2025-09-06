@@ -1,4 +1,4 @@
-package net.juniorfox.application.domain.entity;
+package net.juniorfox.application.domain;
 
 public record Bored(
         String activity,
